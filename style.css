@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #F6F6F4;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 0px 0px 100px 0px;
+    padding: 50px;
+    text-transform: uppercase;
+    background-color: #DBD9D2;
+}
+
+h2 {
+    margin: 0px 200px 30px 0px;
+}
+
+img {
+    width: 30vw;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.main {
+    display: flex;
+    text-align: center;
+}
+
+.column {
+    flex: 50%;
+    padding-left: 10%;
+}
+
+.vertical-container, .horizontal-container {
+    position: relative;
+    width: 30vw;
+    height: 50vh;
+}
+
+.img-vertical-container-before, .img-vertical-container-after, .img-horizontal-container-before, .img-horizontal-container-after {
+    position: absolute;
+    width: 30vw;
+    height: 50vh;
+}
+
+.img-vertical-container-before {
+    width: 30vh;
+    overflow: hidden;
+}
+
+.img-horizontal-container-before {
+    height: 25vh;
+    overflow: hidden;
+}
+
+.slider {
+    background-color: #007C89;
+    z-index: 10;   
+    position: absolute;
+    pointer-events: none;
+}
+
+.vertical-slider {
+    width: 0.5rem;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.horizontal-slider {
+    width: 100%;
+    height: 0.5rem;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
